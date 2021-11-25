@@ -41,15 +41,6 @@ const devConfiguration = (env) => {
           {
             test: /\.(mp4|svg|png|jpe?g|gif|woff(2)?)$/,
             type: 'asset/resource'
-            // use: [
-            //   {
-            //     loader: 'file-loader',
-            //     options: {
-            //       limit: 100000,
-            //       name: '[path][name].[ext]'
-            //     }
-            //   }
-            // ]
           }
         ]
       },

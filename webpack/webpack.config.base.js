@@ -59,7 +59,7 @@ module.exports = (env) => {
         }),
         new HtmlWebpackPlugin({
           ENV: JSON.stringify(process.env.NODE_ENV),
-          title: 'Guest app',
+          title: 'app',
           template: `${WebpackAliases.src}/index.ejs`,
           version: require(`${WebpackAliases.root}/package.json`).version,
           inject: 'body',
@@ -74,8 +74,8 @@ module.exports = (env) => {
           cache: true,
           // https://github.com/itgalaxy/favicons
           favicons: {
-            appName: 'pomvom-guest-app',
-            appDescription: 'Pomvom awesome guest app',
+            appName: 'app',
+            appDescription: 'app',
             developerName: 'nevolgograd',
             background: '#fff',
             theme_color: '#333',

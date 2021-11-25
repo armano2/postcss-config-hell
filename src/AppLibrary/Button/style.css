@@ -1,13 +1,27 @@
 /*@import '../../styles/color-scheme.css';*/
 
+
+/*
+Try local declare vs import 
+
+:root {
+  --color-W0: white;
+}
+*/
+
 @svg-load icon url(assets/icons/download.svg) {
   path {
     fill: white;
     stroke: white;
+   /* fill: var(--color-W0);
+    stroke: var(--color-W0);*/
   }
 }
 
 .button {
+  background-image: svg-inline(icon);
+
+  
   width: 100%;
 
   padding: 0 16px;
@@ -29,9 +43,8 @@
   text-overflow: ellipsis;
   white-space: break-spaces;
   text-transform: capitalize;
-
   background-repeat: no-repeat;
-  background-image: svg-inline(icon);
+  
   background-position: center;
   outline: none;
   border-style: solid;
