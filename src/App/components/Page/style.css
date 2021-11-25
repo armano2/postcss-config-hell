@@ -1,0 +1,24 @@
+/*$color: red;
+
+.extra {
+  background-color: color-mod($color whiteness(90%));
+  color: $color;
+}
+*/
+
+.page {
+  width: 100%;
+  min-height: var(--screenHeight);
+  padding: var(--pagePaddingTopBottom) var(--pagePaddingLeftRight);
+  position: relative;
+
+  &[data-is-loading='true'] {
+    opacity: 0.8;
+
+    *,
+    *::before,
+    *::after {
+      pointer-events: none;
+    }
+  }
+}

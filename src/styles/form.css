@@ -1,0 +1,46 @@
+:global {
+  form {
+    width: 100%;
+    height: max-content;
+
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 16px;
+    place-content: center;
+    justify-content: stretch;
+
+    fieldset {
+      width: 100%;
+      display: contents;
+
+      padding: 0;
+      margin: 0;
+      border: none;
+    }
+
+    label {
+      display: block;
+
+      &:empty {
+        display: none;
+      }
+
+      /* Show only 2 lines of text */
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+
+      font-size: 1.4rem;
+      line-height: 125%;
+    }
+
+    div.form-field-wrapper {
+      width: 100%;
+      position: relative;
+      display: grid;
+      grid-auto-flow: row;
+      grid-gap: 6px;
+    }
+  }
+}

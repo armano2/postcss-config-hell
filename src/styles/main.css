@@ -1,0 +1,112 @@
+@import-normalize;
+@import './variables.css';
+@import './form.css';
+
+:global {
+  #root {
+    width: 100%;
+    max-width: var(--maxWidth);
+    height: var(--screenHeight);
+    min-height: var(--screenHeight);
+
+    margin: 0 auto;
+    position: relative;
+  }
+
+  html {
+    box-sizing: border-box;
+
+    @media screen and (max-width: 320px) {
+      font-size: 8.8px;
+    }
+
+    @media screen and (min-width: 321px) {
+      font-size: 10px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+  }
+
+  body {
+    margin: 0;
+
+    font-family: var(--f), sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+
+    a {
+      text-decoration: underline;
+      color: inherit;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+    }
+
+    h1,
+    h2,
+    p,
+    span,
+    a,
+    label {
+      font-weight: normal;
+      letter-spacing: -0.01em;
+      line-height: 125%;
+      color: inherit;
+
+      &.l {
+        font-weight: 300;
+      }
+
+      &.r {
+        font-weight: normal;
+      }
+
+      &.sb {
+        font-weight: 500;
+      }
+
+      &.b {
+        font-weight: bold;
+      }
+
+      /* Show only "--cropAfter" lines of text */
+      &.ellipsis {
+        --cropAfter: 1;
+        display: -webkit-box;
+        line-clamp: var(--cropAfter);
+        text-overflow: ellipsis;
+        overflow: hidden;
+        box-orient: vertical;
+        -webkit-line-clamp: var(--cropAfter);
+        -webkit-box-orient: vertical;
+      }
+    }
+
+    p,
+    span {
+      font-size: 1.6rem;
+
+      &.body {
+        font-size: 1.6rem;
+      }
+
+      &.sbody {
+        font-size: 1.4rem;
+      }
+
+      &.xsbody {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
