@@ -1,1 +1,1 @@
-# GuestApplication
+# Capybara
