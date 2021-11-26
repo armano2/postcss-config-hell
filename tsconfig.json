@@ -56,8 +56,8 @@
             "useConfig": true,
             "excludePlugins": [
               "postcss-import",
-              "postcss-color-mod-function",
-              "postcss-normalize"
+              "postcss-normalize",
+              "postcss-color-mod-function"
             ]
           }
         }

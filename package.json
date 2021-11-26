@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "dev": "cross-env NODE_ENV=stage webpack serve --config webpack/webpack.config.dev.js",
+    "dev": "cross-env NODE_ENV=dev webpack serve --config webpack/webpack.config.dev.js",
     "ops": "cross-env NODE_ENV=operations webpack --config webpack/webpack.config.prod.js",
     "stage": "cross-env NODE_ENV=stage webpack --config webpack/webpack.config.prod.js",
     "prod": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js",
@@ -40,9 +40,7 @@
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.4.5",
     "postcss-color-mod-function": "^3.0.3",
-    "postcss-custom-properties": "^11.0.0",
     "postcss-import": "^14.0.2",
-    "postcss-inline-svg": "^5.0.0",
     "postcss-loader": "^6.2.0",
     "postcss-normalize": "^10.0.1",
     "postcss-preset-env": "^7.0.1",

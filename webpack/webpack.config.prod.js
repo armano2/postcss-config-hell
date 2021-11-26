@@ -46,18 +46,6 @@ const prodConfiguration = (env) => {
           {
             test: /\.(scss|css)$/,
             use: [{ loader: MiniCssExtractPlugin.loader }]
-          },
-          {
-            test: /\.(mp4|svg|png|jpe?g|gif|woff(2)?)$/,
-            use: [
-              {
-                loader: 'file-loader',
-                options: {
-                  limit: 100000,
-                  name: '[contenthash].[ext]'
-                }
-              }
-            ]
           }
         ]
       },

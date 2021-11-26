@@ -37,10 +37,6 @@ const devConfiguration = (env) => {
           {
             test: /\.(scss|css)$/,
             use: [{ loader: 'style-loader' }]
-          },
-          {
-            test: /\.(mp4|svg|png|jpe?g|gif|woff(2)?)$/,
-            type: 'asset/resource'
           }
         ]
       },
